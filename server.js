@@ -55,10 +55,16 @@ app.use(express.static(path.join(__dirname, "public")));
 //  Adding routes
 require("./routes")(app);
 
-const PORT = process.env.PORT || 8080; // Sử dụng PORT từ môi trường nếu có
+// const PORT = process.env.PORT || 8080; // Sử dụng PORT từ môi trường nếu có
 
-app.listen(8080, () => {
-  console.log(`Server is running on port ${PORT}`);
+// app.listen(8080, () => {
+//   console.log(`Server is running on port ${PORT}`);
+// });
+
+app.on("ready", () => {
+  app.listen(3000, () => {
+    console.log("Server is up on port", 3000);
+  });
 });
 
 module.exports = app;
