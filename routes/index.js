@@ -42,7 +42,7 @@ const messages = require("../config/messages");
 
 // Mock dữ liệu giả cho todos
 const mockTodos = [
-  { id: 1, text: "Buy groceries" },
+  { id: 1, text: "Buy groceries 112312321321" },
   { id: 2, text: "Learn Node.js" },
   { id: 3, text: "Write blog post" }
 ];
