@@ -57,7 +57,7 @@ require("./routes")(app);
 
 const PORT = process.env.PORT || 8080; // Sử dụng PORT từ môi trường nếu có
 
-app.listen(PORT, () => {
+app.listen(8080, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
